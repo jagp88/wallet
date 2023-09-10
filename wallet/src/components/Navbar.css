@@ -1,0 +1,102 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #010f1a;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.brand h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 50px; /* Agrega margen a la derecha del título */
+}
+
+.navbar-options-left {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-option {
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar-option:hover {
+  color: #76cdeb;
+}
+
+.connect-button {
+  background-color: #76cdeb;
+  color: #010f1a;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.connect-button:hover {
+  background-color: #cbe3eb;
+}
+
+.account-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  margin-left: 20px; /* Agrega margen a la izquierda */
+}
+
+.account-info p {
+  margin: 0;
+  margin-bottom: 5px; /* Agrega margen inferior entre las líneas de texto */
+}
+
+@media (max-width: 768px) { /* Define el punto de quiebre para el diseño responsive */
+  .navbar {
+    flex-direction: column; /* Cambia la dirección de los elementos cuando se reduce la ventana */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+
+  .brand {
+    margin-bottom: 10px; /* Agrega margen inferior entre el título y las opciones */
+  }
+
+  .navbar-options-left {
+    display: none; /* Oculta las opciones normales */
+    flex-direction: column; /* Cambia la dirección de las opciones alineadas a la izquierda */
+    gap: 10px; /* Agrega espacio entre las opciones en la vista móvil */
+  }
+
+  .navbar-option {
+    text-align: left; /* Alinea el texto a la izquierda en la vista móvil */
+  }
+
+  .connect-button {
+    margin-top: 10px; /* Agrega margen superior al botón de conexión */
+  }
+
+  .account-info {
+    align-items: flex-start; /* Alinea la información de la cuenta a la izquierda en la vista móvil */
+    margin-left: 0; /* Elimina el margen izquierdo en la vista móvil */
+  }
+}

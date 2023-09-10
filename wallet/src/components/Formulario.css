@@ -1,0 +1,45 @@
+/* src/components/Formulario.css */
+
+.form-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 30%; /* Cambia el ancho del formulario */
+  margin: 50px auto 0; /* Centra verticalmente y agrega margen superior */
+}
+
+.form-container label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.form-container input {
+  width: calc(100% - 30px); /* Ajusta el ancho con margen derecho */
+  padding: 10px;
+  /* margin: 5px; Márgenes en los cuatro lados */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;  
+}
+
+.form-container button {
+  background-color: #010f1a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente */
+}
+
+.form-container button:hover {
+  background-color: #05355a;
+}
